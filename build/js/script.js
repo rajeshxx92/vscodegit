@@ -6,6 +6,9 @@ $(function () {
   let monsterScroll = document.querySelectorAll('#monster-group .monster')
   let navHeight = nav.scrollHeight
 
+
+// slowly zoom items with a class of .card on rollover
+
   monsterScroll.forEach(
     (item) => (item.style.animationDelay = `${Math.random() * 1 + 0.4}s`)
   )
